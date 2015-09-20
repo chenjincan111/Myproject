@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap 实例 - 输入框组中分割的下拉菜单按钮</title>
+   <link href="../css/bootstrap.css" rel="stylesheet">
+   <script src="../js/jquery.js"></script>
+   <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+	
+	<div class="btn-toolbar">
+		<div class="btn-group">
+			<a class="btn btn-default dropdown-toggle" data-toggle="dropdown">字体<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+                     <li><a href="#">功能</a></li>
+                     <li><a href="#">另一个功能</a></li>
+                     <li><a href="#">其他</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">分离的链接</a></li>
+             </ul>
+		</div>
+	</div>
+	<div class="btn-toolbar">
+		<div  class="btn-group">
+			<a class="btn btn-default">字体</a>
+			<a class=" dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+			<ul class="dropdown-menu">
+                     <li><a href="#">功能</a></li>
+                     <li><a href="#">另一个功能</a></li>
+                     <li><a href="#">其他</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">分离的链接</a></li>
+             </ul>
+		</div>
+	</div>
+
+
+
+
+      <div class="row">
+         <div class="col-sm-4">
+            <div class="input-group">
+               <div class="input-group-btn">
+                  <button type="button" class="btn btn-default" 
+                     tabindex="-1">下拉菜单
+                  </button>
+                  <button type="button" class="btn btn-default 
+                     dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                     <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">功能</a></li>
+                     <li><a href="#">另一个功能</a></li>
+                     <li><a href="#">其他</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">分离的链接</a></li>
+                  </ul>
+               </div><!-- /btn-group -->
+               <input type="text" class="form-control">
+            </div><!-- /input-group -->
+         </div><!-- /.col-lg-6 --><br>
+         
+         
+         <div class="col-sm-4">
+            <div class="input-group">
+               <input type="text" class="form-control">
+               <div class="input-group-btn">
+                  <button type="button" class="btn btn-default" 
+                     tabindex="-1">下拉菜单
+                  </button>
+                  <button type="button" class="btn btn-default 
+                     dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                     <span class="caret"></span>
+                     <span class="sr-only">切换下拉菜单</span>
+                  </button>
+                  <ul class="dropdown-menu pull-right">
+                     <li><a href="#">功能</a></li>
+                     <li><a href="#">另一个功能</a></li>
+                     <li><a href="#">其他</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">分离的链接</a></li>
+                  </ul>
+               </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+         </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+
+</body>
+</html>	
