@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   
+   <style>
+		body{
+			background: pink;
+		}
+		
+		@media(max-width:767px){body{
+			background: yellow;
+		}}
+   </style> 
+    <!--//@media(min-width:767px)大于min-width触发样式
+		//@media(max-width:767px)小于max-width触发css样式-->
+</head>
+<body>
+	
+	<div class="container-fluid ">
+		<h1 class="page-header">
+			布局<small>使用bootstrap网络系统布局网页</small>
+		</h1>
+		<p>First up are the final versions of jQuery 1.9 and jQuery
+			Migrate 1.0. We think these releases are pretty solid, because very
+			few of you reported any problems in the beta versions. Just be sure
+			to read the information in the jQuery 1.9 upgrade guide so that your
+			transition will be smoother</p>
+
+		<div class="row-fluid ">
+			<div class="col-md-4">
+				<h2 class="page-header">区域1</h2>
+				<p>Next, take out your sunglasses. Today you get a glimpse at
+					the future, and it’s bright. jQuery 2.0 is in beta test! We know
+					it’s a lot to take in, so let’s recap the positioning for jQuery
+					1.9 and 2.0:</p>
+			</div>
+			<div class="col-md-4">
+				<h2 class="page-header">区域2</h2>
+				<p>The team is supporting both jQuery 1.9 and 2.0 into the
+					future. You choose which version you want to use based on your
+					needs.</p>
+			</div>
+			<div class="col-md-4">
+				<h2 class="page-header">区域3</h2>
+				<p>The jQuery 1.9 final files are available on jQuery’s CDN, and
+					should be available on the Google and Microsoft CDNs within a few
+					days:</p>
+				<div class="row-fluid">
+				<div class="col-md-6">should be available on the Google and Microsoft CDNs within a few</div>
+				<div class="col-md-6">should be available on the Google and Microsoft CDNs within a few</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+
+</body>
+</html>
