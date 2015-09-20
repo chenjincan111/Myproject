@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/prettify.css" rel="stylesheet">
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <style>
+	li.L0, li.L1, li.L2, li.L3,
+	li.L5, li.L6, li.L7, li.L8
+	{ list-style-type: decimal !important }
+	</style>
+   <style>
+		
+		@media(max-width:767px){body{
+			background: yellow;
+		}}
+   </style> 
+    <!--//@media(min-width:767px)大于min-width触发样式
+		//@media(max-width:767px)小于max-width触发css样式-->
+</head>
+<body onload="prettyPrint()">
+	
+	<div class="container">
+		<h1 class="page-header"> 
+			列表<small>无序列表 ，有序列表，描述列表</small>
+		</h1>
+		
+		<h2>无序列表</h2>
+		<ul class="unstyled">
+			<li>以动手实践为荣 , 以只看不练为耻;</li> 
+			<li>以打印日志为荣 , 以单步跟踪为耻;</li> 
+			<li>以空格缩进为荣 , 以制表缩进为耻;</li> 
+			<li>以单元测试为荣 , 以人工测试为耻;</li> 
+		</ul>
+		<h2>有序列表</h2>
+		<ol>
+			<li>以动手实践为荣 , 以只看不练为耻;</li> 
+			<li>以打印日志为荣 , 以单步跟踪为耻;</li> 
+			<li>以空格缩进为荣 , 以制表缩进为耻;</li> 
+			<li>以单元测试为荣 , 以人工测试为耻;</li>
+		</ol>
+		<h2>描述列表</h2>
+		<dl class="dl-horizontal">
+			<dt>Django</dt> 
+			<dd>Django 是一种高级的基于<code>&lt;h1&gt;python</code>的web开发框架；</dd>
+			<dd>Django推崇一种快速,整洁而且实用主义哲学的设计及开发方式 </dd>
+			<dt>Tornado </dt>
+			<dd>Tornado 是 FriendFeed 使用的可扩展的非阻塞式
+			<dd> web 服务器及其相关工具的开源版本。</dd>
+			<dt>代码</dt>
+			<dd>
+				<pre  class="prettyprint pre-scrollable linenums">&lt;div class="container"&gt;
+&lt;h1 class="page-header"&gt; 
+	列表&lt;small&gt;无序列表 ，<kbd>up ↑</kbd>有序列表，描述列表&lt;/small&gt;
+&lt;/h1&gt;&lt;/div&gt;</pre>
+			</dd>
+		</dl>
+		
+		<hr />
+		
+	</div>
+	
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/prettify.js"></script>
+
+</body>
+</html>
