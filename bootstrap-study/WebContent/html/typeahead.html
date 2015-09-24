@@ -1,0 +1,48 @@
+<html>
+<head>
+<link href="../css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+ 
+<div style="margin: 50px 50px">
+<label for="product_search">Product Search: </label>
+<input id="product_search"   type="text" data-provide="typeahead" >
+</div>
+ 
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/bootstrap-typeahead.js"></script>
+ 
+<script>
+$(document).ready(function($) {
+   // Workaround for bug in mouse item selection
+   $.fn.typeahead.Constructor.prototype.blur = function() {
+      var that = this;
+      setTimeout(function () { that.hide() }, 2500);
+   };
+ 
+   $('#product_search').typeahead({
+      source: function(query, process) {
+         return ["Deluxe Bicycle", "Super Deluxe Trampoline", "Super Duper Scooter","sstt","ssuut"];
+      },
+   	  items: 2,
+   	  delay: 500,
+   	  
+	   	highlighter: function (item) {
+	   	    var query = this.query.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, '\\$&')
+	   	    return item.replace(new RegExp('(' + query + ')', 'ig'), function ($1, match) {
+	   	        return '<strong><span style="color:red">' + match + '</span></strong>'
+	   	    })
+	   	},
+	   	updater:function (item) {
+	   		
+	   		console.info(item);
+	   		return item;
+	   	}
+      
+   });
+})
+</script>
+ 
+</body>
+</html>
+	

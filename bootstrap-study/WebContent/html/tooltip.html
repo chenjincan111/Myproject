@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   
+   <style>
+		
+		@media(max-width:767px){body{
+			background: yellow;
+		}}
+   </style> 
+    <!--//@media(min-width:767px)大于min-width触发样式
+		//@media(max-width:767px)小于max-width触发css样式-->
+</head>
+<body>
+	
+	<div class="container">
+		<h1 class="page-header"> 
+			工具提示框
+		</h1>
+		
+		<a href="#" data-animation="true" title="这是一个提示框" rel="11">ToolTip</a>
+		<a href="#" title="这是标题 "  rel="22" data-content="哈哈哈" tabindex="0"  data-trigger="focus" >poover</a>
+		
+		<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+		<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+		
+		<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+		
+		<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+		
+		
+		<a tabindex="0" data-delay='{"show":"0", "hide":"3000"}' id="gg" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">可消失的弹出框</a>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+		$("a[rel=11]").tooltip()
+		$("a[rel=22]").popover()
+		$('[data-toggle="tooltip"]').tooltip()
+		$('#gg').popover()
+	</script>
+
+</body>
+</html>
